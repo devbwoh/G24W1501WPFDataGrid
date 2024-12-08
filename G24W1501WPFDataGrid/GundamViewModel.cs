@@ -23,7 +23,7 @@ class GundamViewModel : INotifyPropertyChanged {
                 return;
 
             _gundamSelected = value;
-            _gundamImage = $"images/{_gundamSelected.Name}.jpg";
+            _gundamImage = $"Images/{_gundamSelected.Name}.jpg";
             OnPropertyChanged(nameof(GundamImage));
         }
     }
