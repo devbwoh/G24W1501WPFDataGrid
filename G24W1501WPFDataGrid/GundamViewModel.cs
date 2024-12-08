@@ -19,10 +19,7 @@ class GundamViewModel : INotifyPropertyChanged {
     public GundamModel? GundamSelected {
         get => _gundamSelected;
         set {
-            if (value == null)
-                return;
-
-            if (_gundamSelected == value)
+            if (value == null || _gundamSelected == value)
                 return;
 
             _gundamSelected = value;
